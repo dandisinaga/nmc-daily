@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const HOST = "192.168.68.108"; // Change to your IP
+const HOST = "0.0.0.0"; // Change to your IP
 const PORT = 4000;
 
 // Store user sessions (temporary)
