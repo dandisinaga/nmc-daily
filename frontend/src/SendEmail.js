@@ -20,7 +20,7 @@ function SendEmail() {
   const handleSendEmail = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://0.0.0.0:4000/send-email", {
+      await axios.post("http://192.168.68.108:4000/send-email", {
         email: localStorage.getItem("email"),
         password: localStorage.getItem("password"),
         to: recipientEmail,
