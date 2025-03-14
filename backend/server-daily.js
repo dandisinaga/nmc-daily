@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const HOST = "0.0.0.0"; // Change to your IP
+const HOST = "nmc.psn.co.id"; // Change to your IP
 const PORT = 4000;
 
 // Store user sessions (temporary)

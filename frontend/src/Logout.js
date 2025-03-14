@@ -10,7 +10,7 @@ function Logout() {
     localStorage.removeItem("password");
 
     // Redirect to login page
-    navigate("/");
+    navigate("/daily");
   }, [navigate]);
 
   return (
