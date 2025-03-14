@@ -10,7 +10,7 @@ function App() {
     
     <Routes>
       <Route path="/daily" element={<Login />} />
-      <Route path="/Daily-Activity" element={<SendEmail />} />
+      <Route path="/daily-activity" element={<SendEmail />} />
       <Route path="/logout" element={<Logout />} />
     </Routes>
   );
