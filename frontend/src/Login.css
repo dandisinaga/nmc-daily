@@ -1,0 +1,72 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../public/gw.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  width: 400px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px; 
+}
+
+.title {
+  color: #f6f6f6; 
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.input-group .form-control {
+  border-radius: 10px 0 0 10px;
+}
+
+.input-group .input-group-text {
+  background-color: #ecf0f1;
+  border-radius: 0 10px 10px 0;
+}
+
+.login-btn {
+  background-color: #3498db; 
+  color: white;
+  font-weight: bold;
+  border-radius: 10px; 
+  padding: 10px;
+  width: 100%; 
+  border: none;
+}
+
+.login-btn:disabled {
+  background-color: #95a5a6;
+}
+
+.text-center a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text-center a:hover {
+  color: #3498db;
+  transform: scale(1.1);
+}
+
+.text-center a:active {
+  transform: scale(0.95);
+}
+
+.login-btn:hover {
+  background-color: #3498db; 
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:active {
+  background-color: #003154; 
+}
