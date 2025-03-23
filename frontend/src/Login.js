@@ -19,7 +19,7 @@ function Login() {
     setLoading(true);
     setError("");
     try {
-      await axios.post("http://nmc.psn.co.id:4000/login", { email: fullEmail, password });
+      await axios.post("http://192.168.17.80:4000/login", { email: fullEmail, password });
       localStorage.setItem("email", fullEmail);
       localStorage.setItem("password", password);
       navigate("/Daily-Activity");
