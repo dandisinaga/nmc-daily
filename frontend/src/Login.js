@@ -19,9 +19,13 @@ function Login() {
     setLoading(true);
     setError("");
     try {
-      await axios.post("http://0.0.0.0:4000/login", { email: fullEmail, password });
-      localStorage.setItem("email", fullEmail);
-      localStorage.setItem("password", password);
+      await axios.post("https://smtp.nmcpsn.my.id", {
+        email: fullEmail,
+        password
+      }, {
+        withCredentials: true
+      });
+  
       navigate("/Daily-Activity");
     } catch (err) {
       setError("Login failed. Check your credentials.");
@@ -29,6 +33,7 @@ function Login() {
       setLoading(false);
     }
   };
+  
 
   return (
     <div className="login-container">
