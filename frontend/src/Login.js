@@ -19,7 +19,7 @@ function Login() {
     setLoading(true);
     setError("");
     try {
-      await axios.post("http://backend.nmcpsn.my.id/login", { email: fullEmail, password });
+      await axios.post("http://server.nmcpsn.my.id/login", { email: fullEmail, password });
       localStorage.setItem("email", fullEmail);
       localStorage.setItem("password", password);
       navigate("/Daily-Activity");
